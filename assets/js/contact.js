@@ -9,7 +9,7 @@ const addMsg = () => {
 
     console.log({ name, email, subject, message });
 
-    fetch(`http://localhost:5000/api/sendmsg/`, {
+    fetch(`https://backend-production-e796.up.railway.app/api/sendmsg/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
