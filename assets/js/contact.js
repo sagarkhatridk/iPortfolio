@@ -9,6 +9,16 @@ const addMsg = () => {
 
     console.log({ name, email, subject, message });
 
+    // ***************************************************************************************************
+    fetch(`https://backend-production-e796.up.railway.app/api/sendmail/`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email }),
+    });
+
+
     fetch(`https://backend-production-e796.up.railway.app/api/sendmsg/`, {
       method: "POST",
       headers: {
@@ -17,7 +27,8 @@ const addMsg = () => {
       body: JSON.stringify({ name, email, subject, message }),
     });
 
-    document.getElementById('sendconf').innerHTML = "<b>Your message has been send. We will contant you soon!<b>"
+    document.getElementById("sendconf").innerHTML =
+      "<b>Your message has been send. We will contant you soon!<b>";
     setTimeout(() => {
       document.getElementById("name").value = "";
       document.getElementById("email").value = "";
