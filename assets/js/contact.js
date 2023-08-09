@@ -11,7 +11,7 @@ const addMsg = () => {
 
     // ***************************************************************************************************
     fetch(`https://backend-production-e796.up.railway.app/api/sendmail/`, {
-      method: "GET",
+      method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
