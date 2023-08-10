@@ -27,14 +27,19 @@ const addMsg = () => {
       body: JSON.stringify({ name, email, subject, message }),
     });
 
-    document.getElementById("sendconf").innerHTML =
-      "<b>Your message has been send. We will contant you soon!<b>";
+    document.getElementById("sendconf").innerHTML = "<b>Your message has been send. We will contant you soon!<b>";
     setTimeout(() => {
       document.getElementById("name").value = "";
       document.getElementById("email").value = "";
       document.getElementById("subject").value = "";
       document.getElementById("msg").value = "";
     }, 1000);
+
+    setTimeout(() => {
+      
+      document.getElementById("sendconf").innerHTML = ""
+    }, 5000);
+
   });
 };
 
