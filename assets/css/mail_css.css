@@ -1,0 +1,40 @@
+.skills-section {
+    margin-top: 50px
+}
+
+.skills-wrapper {
+    max-width: 100%;
+    padding-bottom: 20px
+}
+
+.skills-data-container {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+    margin-top: 50px
+}
+
+.skills-card {
+    background-color: var(-bg-color);
+    border-radius: 50%;
+    box-shadow: 0 0 5px var(--dimWhite);
+    padding: 1rem
+}
+
+.skills-card>img {
+    margin: 1rem
+}
+
+@media (max-width: 1450px) {
+    .skills-data-container {
+        gap:4rem;
+        justify-content: safe
+    }
+}
+
+@media (max-width: 850px) {
+    .skills-data-container {
+        gap:1rem;
+        justify-content: space-around
+    }
+}
