@@ -26,6 +26,10 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -37,6 +41,49 @@
       margin: auto;
       margin-top: 95%;
       border-radius: 20px;
+    }
+
+  
+    .skills-wrapper {
+      max-width: 100%;
+      /* padding-bottom: 20px; */
+    }
+
+    .skills-data-container {
+      margin-top: 50px;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      /* gap: 1rem; */
+    }
+
+    .skills-card {
+      box-shadow: 0px 0px 5px var(--dimWhite);
+      border-radius: 50%;
+      /* padding: 1rem; */
+    }
+
+    .skills-card>img {
+      /* background-color: var(--secondary-bg-color); */
+      margin: 5rem;
+    }
+
+    @media (max-width: 1450px) {
+      .skills-data-container {
+        justify-content: safe;
+        /* gap: 4rem; */
+      }
+    }
+
+    @media (max-width: 850px) {
+      .skills-data-container {
+        justify-content: space-around;
+        /* gap: 1rem; */
+      }
+    }
+
+    .skillContent {
+      height: 80px;
+      width: 80px;
     }
   </style>
 
@@ -286,7 +333,25 @@
 
         </div>
 
+        <div class="skillimg">
+          <div class="row"  style="margin-right: 100px;">
+            <div class="skills-card mx-3 col-md-2"><img src="/logos/html.png" alt="HTML" class="skillContent"></div>
+            <div class="skills-card mx-3 col-md-2"><img src="/logos/css.png" alt="CSS" class="skillContent"></div>
+            <div class="skills-card mx-3 col-md-2"><img src="/logos/javascript.png" alt="JavaScript" class="skillContent"></div>
+            <div class="skills-card mx-3 col-md-2"><img src="/logos/api.png" alt="api" class="skillContent"></div>
+            <div class="skills-card mx-3 col-md-2"><img src="logos/python.png" alt="Python" class="skillContent"></div>
+            <div class="skills-card mx-3 col-md-2"><img src="/logos/nodejs.png" alt="nodejs" class="skillContent"></div>
+            <div class="skills-card mx-3 col-md-2"><img src="logos/reactjs.png" alt="reactjs" class="skillContent"></div>
+            <div class="skills-card mx-3 col-md-2"><img src="/logos/mongodb.png" alt="MongoDB" class="skillContent"></div>
+            <div class="skills-card mx-3 col-md-2"><img src="/logos/mysql.png" alt="mysql" class="skillContent"></div>
+            <div class="skills-card mx-3 col-md-2"><img src="/logos/git.png" alt="git" class="skillContent"></div>
+            <div class="skills-card col-md-2"><img src="/logos/bootstrap.png" alt="bootstrap" class="skillContent"></div>
+            <div class="skills-card col-md-2"><img src="/logos/aws-lambda.png" alt="awslambda" class="skillContent"></div>
+          </div>
+        </div>
+
       </div>
+      
     </section><!-- End Skills Section -->
 
     <!-- ======= Resume Section ======= -->
@@ -401,7 +466,8 @@
               <div class="portfolio-links">
                 <a href="/projectImg/bootstrap_project.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
                   title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="https://sagarkhatridk.github.io/main/" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="https://sagarkhatridk.github.io/main/" title="More Details" target="_blank"><i
+                    class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -412,7 +478,7 @@
               <div class="portfolio-links">
                 <a href="/projectImg/costic_django.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
                   title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="portfolio-details.html" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -423,7 +489,7 @@
               <div class="portfolio-links">
                 <a href="/projectImg/fastapi.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
                   title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="portfolio-details.html" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -434,11 +500,8 @@
               <div class="portfolio-links">
                 <a href="/projectImg/inotes_reactjs.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
                   title="Card 2"><i class="bx bx-plus"></i></a>
-<<<<<<< HEAD
-                <a href="https://sagarkhatridk.github.io/inotebook/" title="More Details"><i class="bx bx-link"></i></a>
-=======
-                <a href="https://sagarkhatridk.github.io/inotebook" title="More Details"><i class="bx bx-link"></i></a>
->>>>>>> ff48dcda14a1121cba984dfd32831d558604b8c3
+                <a href="https://sagarkhatridk.github.io/inotebook/" title="More Details" target="_blank"><i
+                    class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -449,7 +512,7 @@
               <div class="portfolio-links">
                 <a href="/projectImg/newsApp_react.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
                   title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="portfolio-details.html" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -460,7 +523,7 @@
               <div class="portfolio-links">
                 <a href="/projectImg/php_buspass.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
                   title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="portfolio-details.html" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -471,7 +534,7 @@
               <div class="portfolio-links">
                 <a href="/projectImg/portfolio.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
                   title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="portfolio-details.html" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -482,7 +545,7 @@
               <div class="portfolio-links">
                 <a href="/projectImg/busspass2.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
                   title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="portfolio-details.html" title="More Details" target="_blank"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -493,7 +556,8 @@
               <div class="portfolio-links">
                 <a href="/projectImg/textutil_reactjs.png" data-gallery="portfolioGallery" class="portfolio-lightbox"
                   title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="https://sagarkhatridk.github.io/textutils_js/" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="https://sagarkhatridk.github.io/textutils_js/" title="More Details" target="_blank"
+                  target="_blank"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -717,11 +781,10 @@
     </section><!-- End Contact Section -->
 
 
+  </main>
+  
+  <!-- End #main -->
 
-
-
-
-  </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -754,11 +817,25 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
 
-
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
   <script src="assets/js/contact.js"></script>
+
+
+
+
+  <!-- bootstra js -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
