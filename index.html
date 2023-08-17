@@ -57,8 +57,12 @@
     }
 
     .skills-card {
-      box-shadow: 0px 0px 5px var(--dimWhite);
-      border-radius: 50%;
+      /* box-shadow: 0px 0px 5px var(--dimWhite); */
+      /* border-radius: 50%;
+      border-color: aqua; */
+      display: flex;
+      justify-content: center;
+      
     
       /* padding: 1rem; */
     }
@@ -92,15 +96,49 @@
     display: flex;
     justify-content: center;
 }
+
+
+
+
+/* animation css */
+
+article {
+            display: flex;
+            width: 200%;
+            animation: bannermove 25s linear infinite;
+        }
+
+
+        div {
+            width: 100%;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            padding-left: 0;
+            margin: 10px;
+        }
+
+        li {
+            width: 150px;
+            height: 150px;
+            margin: 40px;
+        }
+
+        @keyframes bannermove {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-150px*12));
+            }
+        }
+
   </style>
 
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Updated: Jul 27 2023 with Bootstrap v5.3.1
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body>
@@ -340,25 +378,86 @@
 
         </div>
 
-        <div class="skillimg">
+        <!-- <div class="skillimg">
           <div class="container"  style="margin-right: 100px;">
             
             <div class="skillcont row">
-            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2" style="display: flex; justify-content: center;"><img style="display: flex; justify-content: center;" src="/logos/html.png" alt="HTML" class="skillContent"></div>
-            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2" style="display: flex; justify-content: center;"><img style="display: flex; justify-content: center;" src="/logos/css.png" alt="CSS" class="skillContent"></div>
-            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2" style="display: flex; justify-content: center;"><img style="display: flex; justify-content: center;" src="/logos/javascript.png" alt="JavaScript" class="skillContent"></div>
-            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2" style="display: flex; justify-content: center;"><img style="display: flex; justify-content: center;" src="/logos/api.png" alt="api" class="skillContent"></div>
-            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2" style="display: flex; justify-content: center;"><img style="display: flex; justify-content: center;" src="logos/python.png" alt="Python" class="skillContent"></div>
-            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2" style="display: flex; justify-content: center;"><img style="display: flex; justify-content: center;" src="/logos/nodejs.png" alt="nodejs" class="skillContent"></div>
-            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2" style="display: flex; justify-content: center;"><img style="display: flex; justify-content: center;" src="logos/reactjs.png" alt="reactjs" class="skillContent"></div>
-            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2" style="display: flex; justify-content: center;"><img style="display: flex; justify-content: center;" src="/logos/mongodb.png" alt="MongoDB" class="skillContent"></div>
-            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2" style="display: flex; justify-content: center;"><img style="display: flex; justify-content: center;" src="/logos/mysql.png" alt="mysql" class="skillContent"></div>
-            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2" style="display: flex; justify-content: center;"><img style="display: flex; justify-content: center;" src="/logos/git.png" alt="git" class="skillContent"></div>
-            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2" style="display: flex; justify-content: center;"><img style="display: flex; justify-content: center;" src="/logos/bootstrap.png" alt="bootstrap" class="skillContent"></div>
-            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2" style="display: flex; justify-content: center;"><img style="display: flex; justify-content: center;" src="/logos/aws-lambda.png" alt="awslambda" class="skillContent"></div>
+            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2"><img style="display: flex; justify-content: center;" src="/logos/html.png" alt="HTML" class="skillContent"></div>
+            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2"><img style="display: flex; justify-content: center;" src="/logos/css.png" alt="CSS" class="skillContent"></div>
+            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2"><img style="display: flex; justify-content: center;" src="/logos/javascript.png" alt="JavaScript" class="skillContent"></div>
+            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2"><img style="display: flex; justify-content: center;" src="/logos/api.png" alt="api" class="skillContent"></div>
+            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2"><img style="display: flex; justify-content: center;" src="logos/python.png" alt="Python" class="skillContent"></div>
+            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2"><img style="display: flex; justify-content: center;" src="/logos/nodejs.png" alt="nodejs" class="skillContent"></div>
+            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2"><img style="display: flex; justify-content: center;" src="logos/reactjs.png" alt="reactjs" class="skillContent"></div>
+            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2"><img style="display: flex; justify-content: center;" src="/logos/mongodb.png" alt="MongoDB" class="skillContent"></div>
+            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2"><img style="display: flex; justify-content: center;" src="/logos/mysql.png" alt="mysql" class="skillContent"></div>
+            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2"><img style="display: flex; justify-content: center;" src="/logos/git.png" alt="git" class="skillContent"></div>
+            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2"><img style="display: flex; justify-content: center;" src="/logos/bootstrap.png" alt="bootstrap" class="skillContent"></div>
+            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2"><img style="display: flex; justify-content: center;" src="/logos/aws-lambda.png" alt="awslambda" class="skillContent"></div>
+            </div>
+          
           </div>
-          </div>
-        </div>
+        </div> -->
+
+        <!-- section> -->
+
+        <article>
+            <div>
+                <ul>
+                    <li><img style="display: flex; justify-content: center;" src="/logos/html.png" alt="HTML"
+                            class="skillContent"></li>
+                    <li><img style="display: flex; justify-content: center;" src="/logos/css.png" alt="CSS"
+                            class="skillContent"></li>
+                    <li><img style="display: flex; justify-content: center;" src="/logos/javascript.png"
+                            alt="JavaScript" class="skillContent"></li>
+                    <li><img style="display: flex; justify-content: center;" src="/logos/api.png" alt="api"
+                            class="skillContent"></li>
+                    <li><img style="display: flex; justify-content: center;" src="logos/python.png" alt="Python"
+                            class="skillContent"></li>
+                    <li><img style="display: flex; justify-content: center;" src="/logos/nodejs.png" alt="nodejs"
+                            class="skillContent"></li>
+                    <li><img style="display: flex; justify-content: center;" src="logos/reactjs.png" alt="reactjs"
+                            class="skillContent"></li>
+                    <li><img style="display: flex; justify-content: center;" src="/logos/mongodb.png" alt="MongoDB"
+                            class="skillContent"></li>
+                    <li><img style="display: flex; justify-content: center;" src="/logos/mysql.png" alt="mysql"
+                            class="skillContent"></li>
+                    <li><img style="display: flex; justify-content: center;" src="/logos/git.png" alt="git"
+                            class="skillContent"></li>
+                    <li><img style="display: flex; justify-content: center;" src="/logos/bootstrap.png" alt="bootstrap"
+                            class="skillContent"></li>
+                    <li><img style="display: flex; justify-content: center;" src="/logos/aws-lambda.png" alt="awslambda"
+                            class="skillContent"></li>
+                            <li><img style="display: flex; justify-content: center;" src="/logos/html.png" alt="HTML"
+                                class="skillContent"></li>
+                        <li><img style="display: flex; justify-content: center;" src="/logos/css.png" alt="CSS"
+                                class="skillContent"></li>
+                        <li><img style="display: flex; justify-content: center;" src="/logos/javascript.png"
+                                alt="JavaScript" class="skillContent"></li>
+                        <li><img style="display: flex; justify-content: center;" src="/logos/api.png" alt="api"
+                                class="skillContent"></li>
+                        <li><img style="display: flex; justify-content: center;" src="logos/python.png" alt="Python"
+                                class="skillContent"></li>
+                        <li><img style="display: flex; justify-content: center;" src="/logos/nodejs.png" alt="nodejs"
+                                class="skillContent"></li>
+                        <li><img style="display: flex; justify-content: center;" src="logos/reactjs.png" alt="reactjs"
+                                class="skillContent"></li>
+                        <li><img style="display: flex; justify-content: center;" src="/logos/mongodb.png" alt="MongoDB"
+                                class="skillContent"></li>
+                        <li><img style="display: flex; justify-content: center;" src="/logos/mysql.png" alt="mysql"
+                                class="skillContent"></li>
+                        <li><img style="display: flex; justify-content: center;" src="/logos/git.png" alt="git"
+                                class="skillContent"></li>
+                        <li><img style="display: flex; justify-content: center;" src="/logos/bootstrap.png" alt="bootstrap"
+                                class="skillContent"></li>
+                        <li><img style="display: flex; justify-content: center;" src="/logos/aws-lambda.png" alt="awslambda"
+                                class="skillContent"></li>
+
+
+                </ul>
+            </div>
+        </article>
+    </section>
 
       </div>
       
@@ -804,10 +903,7 @@
         &copy; Copyright <strong><span>sagarkhatri</span></strong>
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+       
 
       </div>
     </div>
