@@ -88,48 +88,59 @@
     }
 
     .skillContent {
-      height: 80px;
-      width: 80px;
+      width: 100%;
+      transition: transform 1s;
     }
 
+    .skillContent:hover{
+      transform: translateZ(20px);
+    }
     .skillcont {
       display: flex;
       justify-content: center;
     }
 
-
-
-
-    /* animation css */
-
     .article {
       display: flex;
-      width: 200%;
-      animation: bannermove 25s linear infinite;
+      /* width: 200%; */
+      
+      
     }
 
 
     .animationul {
       display: flex;
-      list-style-type: none;
-      padding-left: 0;
-      margin: 10px;
-      margin-top: 50px;
+      width: 100%;
+      animation: scroll 30s linear infinite;
+      
     }
 
     .animationli {
-      width: 150px;
-      height: 150px;
-      margin: 15px;
+      width: 250px;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      perspective: 100px;
     }
 
-    @keyframes bannermove {
+    .animationdiv{
+      height: 350px;
+      margin: auto;
+      position: relative;
+      width:90%;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+    }
+
+    @keyframes scroll {
       0% {
         transform: translateX(0);
       }
 
       100% {
-        transform: translateX(calc(-150px*12));
+        transform: translateX(calc(-250px*12));
       }
     }
   </style>
@@ -397,62 +408,36 @@
 
         <!-- section> -->
 
-        <article class="article">
-          <div>
+        <div class="animationdiv">
+      
             <ul class="animationul">
-              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/html.png"
-                  alt="HTML" class="skillContent"></li>
-              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/css.png"
-                  alt="CSS" class="skillContent"></li>
-              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/javascript.png"
-                  alt="JavaScript" class="skillContent"></li>
-              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/api.png"
-                  alt="api" class="skillContent"></li>
-              <li class="animationli"><img style="display: flex; justify-content: center;" src="logos/python.png"
-                  alt="Python" class="skillContent"></li>
-              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/nodejs.png"
-                  alt="nodejs" class="skillContent"></li>
-              <li class="animationli"><img style="display: flex; justify-content: center;" src="logos/reactjs.png"
-                  alt="reactjs" class="skillContent"></li>
-              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/mongodb.png"
-                  alt="MongoDB" class="skillContent"></li>
-              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/mysql.png"
-                  alt="mysql" class="skillContent"></li>
-              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/git.png"
-                  alt="git" class="skillContent"></li>
-              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/bootstrap.png"
-                  alt="bootstrap" class="skillContent"></li>
-              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/aws-lambda.png" alt="awslambda"
-                  class="skillContent"></li>
-              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/html.png"
-                  alt="HTML" class="skillContent"></li>
-              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/css.png"
-                  alt="CSS" class="skillContent"></li>
-              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/javascript.png"
-                  alt="JavaScript" class="skillContent"></li>
-              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/api.png"
-                  alt="api" class="skillContent"></li>
-              <li class="animationli"><img style="display: flex; justify-content: center;" src="logos/python.png"
-                  alt="Python" class="skillContent"></li>
-              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/nodejs.png"
-                  alt="nodejs" class="skillContent"></li>
-              <li class="animationli"><img style="display: flex; justify-content: center;" src="logos/reactjs.png"
-                  alt="reactjs" class="skillContent"></li>
-              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/mongodb.png"
-                  alt="MongoDB" class="skillContent"></li>
-              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/mysql.png"
-                  alt="mysql" class="skillContent"></li>
-              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/git.png"
-                  alt="git" class="skillContent"></li>
-              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/bootstrap.png"
-                  alt="bootstrap" class="skillContent"></li>
-              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/aws-lambda.png"
-                  alt="awslambda" class="skillContent"></li>
-
-
+              <div class="animationli"><img  src="/logos/html.png" alt="HTML" class="skillContent"></div>
+              <div class="animationli"><img  src="/logos/css.png" alt="CSS" class="skillContent"></div>
+              <div class="animationli"><img  src="/logos/javascript.png" alt="JavaScript" class="skillContent"></div>
+              <div class="animationli"><img  src="/logos/api.png" alt="api" class="skillContent"></div>
+              <div class="animationli"><img  src="logos/python.png" alt="Python" class="skillContent"></div>
+              <div class="animationli"><img  src="/logos/nodejs.png" alt="nodejs" class="skillContent"></div>
+              <div class="animationli"><img  src="logos/reactjs.png" alt="reactjs" class="skillContent"></div>
+              <div class="animationli"><img  src="/logos/mongodb.png" alt="MongoDB" class="skillContent"></div>
+              <div class="animationli"><img  src="/logos/mysql.png" alt="mysql" class="skillContent"></div>
+              <div class="animationli"><img  src="/logos/git.png" alt="git" class="skillContent"></div>
+              <div class="animationli"><img  src="/logos/bootstrap.png" alt="bootstrap" class="skillContent"></div>
+              <div class="animationli"><img  src="/logos/aws-lambda.png" alt="awslambda" class="skillContent"></div>
+              <div class="animationli"><img  src="/logos/html.png" alt="HTML" class="skillContent"></div>
+              <div class="animationli"><img  src="/logos/css.png" alt="CSS" class="skillContent"></div>
+              <div class="animationli"><img  src="/logos/javascript.png" alt="JavaScript" class="skillContent"></div>
+              <div class="animationli"><img  src="/logos/api.png" alt="api" class="skillContent"></div>
+              <div class="animationli"><img  src="logos/python.png" alt="Python" class="skillContent"></div>
+              <div class="animationli"><img  src="/logos/nodejs.png" alt="nodejs" class="skillContent"></div>
+              <div class="animationli"><img  src="logos/reactjs.png" alt="reactjs" class="skillContent"></div>
+              <div class="animationli"><img  src="/logos/mongodb.png" alt="MongoDB" class="skillContent"></div>
+              <div class="animationli"><img  src="/logos/mysql.png" alt="mysql" class="skillContent"></div>
+              <div class="animationli"><img  src="/logos/git.png" alt="git" class="skillContent"></div>
+              <div class="animationli"><img  src="/logos/bootstrap.png" alt="bootstrap" class="skillContent"></div>
+              <div class="animationli"><img  src="/logos/aws-lambda.png" alt="awslambda" class="skillContent"></div>
             </ul>
           </div>
-        </article>
+  
     </section>
 
     </div>
