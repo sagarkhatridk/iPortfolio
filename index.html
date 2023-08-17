@@ -43,7 +43,7 @@
       border-radius: 20px;
     }
 
-  
+
     .skills-wrapper {
       max-width: 100%;
       /* padding-bottom: 20px; */
@@ -62,15 +62,15 @@
       border-color: aqua; */
       display: flex;
       justify-content: center;
-      
-    
+
+
       /* padding: 1rem; */
     }
 
     .skills-card>img {
       /* background-color: var(--secondary-bg-color); */
       margin: 2rem;
-      
+
     }
 
     @media (max-width: 1450px) {
@@ -93,49 +93,45 @@
     }
 
     .skillcont {
-    display: flex;
-    justify-content: center;
-}
+      display: flex;
+      justify-content: center;
+    }
 
 
 
 
-/* animation css */
+    /* animation css */
 
-article {
-            display: flex;
-            width: 200%;
-            animation: bannermove 25s linear infinite;
-        }
+    .article {
+      display: flex;
+      width: 200%;
+      animation: bannermove 25s linear infinite;
+    }
 
 
-        div {
-            width: 100%;
-        }
+    .animationul {
+      display: flex;
+      list-style-type: none;
+      padding-left: 0;
+      margin: 10px;
+      margin-top: 50px;
+    }
 
-        ul {
-            display: flex;
-            list-style-type: none;
-            padding-left: 0;
-            margin: 10px;
-        }
+    .animationli {
+      width: 150px;
+      height: 150px;
+      margin: 15px;
+    }
 
-        li {
-            width: 150px;
-            height: 150px;
-            margin: 40px;
-        }
+    @keyframes bannermove {
+      0% {
+        transform: translateX(0);
+      }
 
-        @keyframes bannermove {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(calc(-150px*12));
-            }
-        }
-
+      100% {
+        transform: translateX(calc(-150px*12));
+      }
+    }
   </style>
 
 
@@ -401,66 +397,66 @@ article {
 
         <!-- section> -->
 
-        <article>
-            <div>
-                <ul>
-                    <li><img style="display: flex; justify-content: center;" src="/logos/html.png" alt="HTML"
-                            class="skillContent"></li>
-                    <li><img style="display: flex; justify-content: center;" src="/logos/css.png" alt="CSS"
-                            class="skillContent"></li>
-                    <li><img style="display: flex; justify-content: center;" src="/logos/javascript.png"
-                            alt="JavaScript" class="skillContent"></li>
-                    <li><img style="display: flex; justify-content: center;" src="/logos/api.png" alt="api"
-                            class="skillContent"></li>
-                    <li><img style="display: flex; justify-content: center;" src="logos/python.png" alt="Python"
-                            class="skillContent"></li>
-                    <li><img style="display: flex; justify-content: center;" src="/logos/nodejs.png" alt="nodejs"
-                            class="skillContent"></li>
-                    <li><img style="display: flex; justify-content: center;" src="logos/reactjs.png" alt="reactjs"
-                            class="skillContent"></li>
-                    <li><img style="display: flex; justify-content: center;" src="/logos/mongodb.png" alt="MongoDB"
-                            class="skillContent"></li>
-                    <li><img style="display: flex; justify-content: center;" src="/logos/mysql.png" alt="mysql"
-                            class="skillContent"></li>
-                    <li><img style="display: flex; justify-content: center;" src="/logos/git.png" alt="git"
-                            class="skillContent"></li>
-                    <li><img style="display: flex; justify-content: center;" src="/logos/bootstrap.png" alt="bootstrap"
-                            class="skillContent"></li>
-                    <li><img style="display: flex; justify-content: center;" src="/logos/aws-lambda.png" alt="awslambda"
-                            class="skillContent"></li>
-                            <li><img style="display: flex; justify-content: center;" src="/logos/html.png" alt="HTML"
-                                class="skillContent"></li>
-                        <li><img style="display: flex; justify-content: center;" src="/logos/css.png" alt="CSS"
-                                class="skillContent"></li>
-                        <li><img style="display: flex; justify-content: center;" src="/logos/javascript.png"
-                                alt="JavaScript" class="skillContent"></li>
-                        <li><img style="display: flex; justify-content: center;" src="/logos/api.png" alt="api"
-                                class="skillContent"></li>
-                        <li><img style="display: flex; justify-content: center;" src="logos/python.png" alt="Python"
-                                class="skillContent"></li>
-                        <li><img style="display: flex; justify-content: center;" src="/logos/nodejs.png" alt="nodejs"
-                                class="skillContent"></li>
-                        <li><img style="display: flex; justify-content: center;" src="logos/reactjs.png" alt="reactjs"
-                                class="skillContent"></li>
-                        <li><img style="display: flex; justify-content: center;" src="/logos/mongodb.png" alt="MongoDB"
-                                class="skillContent"></li>
-                        <li><img style="display: flex; justify-content: center;" src="/logos/mysql.png" alt="mysql"
-                                class="skillContent"></li>
-                        <li><img style="display: flex; justify-content: center;" src="/logos/git.png" alt="git"
-                                class="skillContent"></li>
-                        <li><img style="display: flex; justify-content: center;" src="/logos/bootstrap.png" alt="bootstrap"
-                                class="skillContent"></li>
-                        <li><img style="display: flex; justify-content: center;" src="/logos/aws-lambda.png" alt="awslambda"
-                                class="skillContent"></li>
+        <article class="article">
+          <div>
+            <ul class="animationul">
+              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/html.png"
+                  alt="HTML" class="skillContent"></li>
+              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/css.png"
+                  alt="CSS" class="skillContent"></li>
+              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/javascript.png"
+                  alt="JavaScript" class="skillContent"></li>
+              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/api.png"
+                  alt="api" class="skillContent"></li>
+              <li class="animationli"><img style="display: flex; justify-content: center;" src="logos/python.png"
+                  alt="Python" class="skillContent"></li>
+              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/nodejs.png"
+                  alt="nodejs" class="skillContent"></li>
+              <li class="animationli"><img style="display: flex; justify-content: center;" src="logos/reactjs.png"
+                  alt="reactjs" class="skillContent"></li>
+              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/mongodb.png"
+                  alt="MongoDB" class="skillContent"></li>
+              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/mysql.png"
+                  alt="mysql" class="skillContent"></li>
+              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/git.png"
+                  alt="git" class="skillContent"></li>
+              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/bootstrap.png"
+                  alt="bootstrap" class="skillContent"></li>
+              <li><img style="display: flex; justify-content: center;" src="/logos/aws-lambda.png" alt="awslambda"
+                  class="skillContent"></li>
+              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/html.png"
+                  alt="HTML" class="skillContent"></li>
+              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/css.png"
+                  alt="CSS" class="skillContent"></li>
+              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/javascript.png"
+                  alt="JavaScript" class="skillContent"></li>
+              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/api.png"
+                  alt="api" class="skillContent"></li>
+              <li class="animationli"><img style="display: flex; justify-content: center;" src="logos/python.png"
+                  alt="Python" class="skillContent"></li>
+              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/nodejs.png"
+                  alt="nodejs" class="skillContent"></li>
+              <li class="animationli"><img style="display: flex; justify-content: center;" src="logos/reactjs.png"
+                  alt="reactjs" class="skillContent"></li>
+              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/mongodb.png"
+                  alt="MongoDB" class="skillContent"></li>
+              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/mysql.png"
+                  alt="mysql" class="skillContent"></li>
+              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/git.png"
+                  alt="git" class="skillContent"></li>
+              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/bootstrap.png"
+                  alt="bootstrap" class="skillContent"></li>
+              <li class="animationli"><img style="display: flex; justify-content: center;" src="/logos/aws-lambda.png"
+                  alt="awslambda" class="skillContent"></li>
 
 
-                </ul>
-            </div>
+            </ul>
+          </div>
         </article>
     </section>
 
-      </div>
-      
+    </div>
+
     </section><!-- End Skills Section -->
 
     <!-- ======= Resume Section ======= -->
@@ -544,7 +540,8 @@ article {
           </div>
         </div>
 
-        <div class="d-flex justify-content-end my-5"><a href="/Sagar Resume.pdf" download="Sagar Khatri Resume"><button type="button" class="btn btn-primary" >Download Resume</button></a></div>
+        <div class="d-flex justify-content-end my-5"><a href="/Sagar Resume.pdf" download="Sagar Khatri Resume"><button
+              type="button" class="btn btn-primary">Download Resume</button></a></div>
       </div>
     </section><!-- End Resume Section -->
 
@@ -892,7 +889,7 @@ article {
 
 
   </main>
-  
+
   <!-- End #main -->
 
 
@@ -903,7 +900,7 @@ article {
         &copy; Copyright <strong><span>sagarkhatri</span></strong>
       </div>
       <div class="credits">
-       
+
 
       </div>
     </div>
