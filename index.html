@@ -186,21 +186,29 @@
       </nav><!-- .nav-menu -->
     </div>
   </header><!-- End Header -->
-
+  
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>Sagar Khatri</h1>
       <p>I'm <span class="typed" data-typed-items="Developer, Freelancer"></span></p>
       <script>
-        function scrollFunction1() {
-          let e = document.getElementById("first-scroll");
-          e.scrollIntoView({
-            block: 'start',
-            behavior: 'auto',
-            inline: 'start'
+        // function scrollFunction1() {
+        //   let e = document.getElementById("first-scroll");
+        //   e.scrollIntoView({
+        //     block: 'start',
+        //     behavior: 'auto',
+        //     inline: 'start'
+        //   });
+        // }
+
+
+        $(document).ready(function () {
+          $("#first-scroll").click(function () {
+            $('html, body').scrollTop($("#about").offset().top);
           });
-        }
+        });
+
 
       </script>
       <div class="container"><button type="button" id="first-scroll" class="btn btn-dark"
@@ -409,7 +417,7 @@
 
         <!-- section> -->
 
-        
+
       </div>
       <div class="animationdiv">
 
@@ -868,9 +876,18 @@
                 <textarea class="form-control" name="message" id="msg" rows="10" required></textarea>
               </div>
               <span class="my-2" id="sendconf"></span>
-              <div class="text-center my-5"><input type="submit" class="my-5" value="Submit"
-                  class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"></input></div>
+              <div class="text-center my-5"><button type="submit" class="btn btn-success">Submit</button></div>
             </form>
+            
+            
+            <script>
+              // script for showing alert
+              $(document).ready(function () {
+                $('.btn').click(function () {
+                  $('.alert').show()
+                })
+              });
+            </script>
           </div>
 
         </div>
