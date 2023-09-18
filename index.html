@@ -17,7 +17,7 @@
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
-
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -108,12 +108,25 @@
 
     }
 
+    .animationdiv {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      height: 350px;
+      margin: auto;
+      display: grid;
+      place-items: center;
+      /* z-index: 1; */
+
+
+    }
 
     .animationul {
       display: flex;
       width: 100%;
       animation: scroll 50s linear infinite;
-
+      /* white-space: nowrap; */
+      /* justify-content: space-between; */
     }
 
     .animationli {
@@ -123,17 +136,10 @@
       align-items: center;
       padding: 15px;
       perspective: 100px;
+
     }
 
-    .animationdiv {
-      height: 350px;
-      margin: auto;
-      position: relative;
-      width: 100%;
-      display: grid;
-      place-items: center;
-      overflow: hidden;
-    }
+
 
     @keyframes scroll {
       0% {
@@ -186,7 +192,7 @@
       </nav><!-- .nav-menu -->
     </div>
   </header><!-- End Header -->
-  
+
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
@@ -394,59 +400,38 @@
 
         </div>
 
-        <!-- <div class="skillimg">
-          <div class="container"  style="margin-right: 100px;">
-            
-            <div class="skillcont row">
-            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2"><img style="display: flex; justify-content: center;" src="/logos/html.png" alt="HTML" class="skillContent"></div>
-            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2"><img style="display: flex; justify-content: center;" src="/logos/css.png" alt="CSS" class="skillContent"></div>
-            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2"><img style="display: flex; justify-content: center;" src="/logos/javascript.png" alt="JavaScript" class="skillContent"></div>
-            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2"><img style="display: flex; justify-content: center;" src="/logos/api.png" alt="api" class="skillContent"></div>
-            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2"><img style="display: flex; justify-content: center;" src="logos/python.png" alt="Python" class="skillContent"></div>
-            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2"><img style="display: flex; justify-content: center;" src="/logos/nodejs.png" alt="nodejs" class="skillContent"></div>
-            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2"><img style="display: flex; justify-content: center;" src="logos/reactjs.png" alt="reactjs" class="skillContent"></div>
-            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2"><img style="display: flex; justify-content: center;" src="/logos/mongodb.png" alt="MongoDB" class="skillContent"></div>
-            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2"><img style="display: flex; justify-content: center;" src="/logos/mysql.png" alt="mysql" class="skillContent"></div>
-            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2"><img style="display: flex; justify-content: center;" src="/logos/git.png" alt="git" class="skillContent"></div>
-            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2"><img style="display: flex; justify-content: center;" src="/logos/bootstrap.png" alt="bootstrap" class="skillContent"></div>
-            <div class="skills-card col-12 col-md-6 col-lg-2 mx-2"><img style="display: flex; justify-content: center;" src="/logos/aws-lambda.png" alt="awslambda" class="skillContent"></div>
-            </div>
-          
-          </div>
-        </div> -->
-
-        <!-- section> -->
-
 
       </div>
-      <div class="animationdiv">
 
-        <ul class="animationul">
-          <div class="animationli"><img src="/logos/html.png" alt="HTML" class="skillContent"></div>
-          <div class="animationli"><img src="/logos/css.png" alt="CSS" class="skillContent"></div>
-          <div class="animationli"><img src="/logos/javascript.png" alt="JavaScript" class="skillContent"></div>
-          <div class="animationli"><img src="/logos/api.png" alt="api" class="skillContent"></div>
-          <div class="animationli"><img src="logos/python.png" alt="Python" class="skillContent"></div>
-          <div class="animationli"><img src="/logos/nodejs.png" alt="nodejs" class="skillContent"></div>
-          <div class="animationli"><img src="logos/reactjs.png" alt="reactjs" class="skillContent"></div>
-          <div class="animationli"><img src="/logos/mongodb.png" alt="MongoDB" class="skillContent"></div>
-          <div class="animationli"><img src="/logos/mysql.png" alt="mysql" class="skillContent"></div>
-          <div class="animationli"><img src="/logos/git.png" alt="git" class="skillContent"></div>
-          <div class="animationli"><img src="/logos/bootstrap.png" alt="bootstrap" class="skillContent"></div>
-          <div class="animationli"><img src="/logos/aws-lambda.png" alt="awslambda" class="skillContent"></div>
-          <div class="animationli"><img src="/logos/html.png" alt="HTML" class="skillContent"></div>
-          <div class="animationli"><img src="/logos/css.png" alt="CSS" class="skillContent"></div>
-          <div class="animationli"><img src="/logos/javascript.png" alt="JavaScript" class="skillContent"></div>
-          <div class="animationli"><img src="/logos/api.png" alt="api" class="skillContent"></div>
-          <div class="animationli"><img src="logos/python.png" alt="Python" class="skillContent"></div>
-          <div class="animationli"><img src="/logos/nodejs.png" alt="nodejs" class="skillContent"></div>
-          <div class="animationli"><img src="logos/reactjs.png" alt="reactjs" class="skillContent"></div>
-          <div class="animationli"><img src="/logos/mongodb.png" alt="MongoDB" class="skillContent"></div>
-          <div class="animationli"><img src="/logos/mysql.png" alt="mysql" class="skillContent"></div>
-          <div class="animationli"><img src="/logos/git.png" alt="git" class="skillContent"></div>
-          <div class="animationli"><img src="/logos/bootstrap.png" alt="bootstrap" class="skillContent"></div>
-          <div class="animationli"><img src="/logos/aws-lambda.png" alt="awslambda" class="skillContent"></div>
-        </ul>
+      <div class="scroll-container">
+        <div class="animationdiv">
+          <ul class="animationul">
+            <div class="animationli"><img src="/logos/html.png" alt="HTML" class="skillContent"></div>
+            <div class="animationli"><img src="/logos/css.png" alt="CSS" class="skillContent"></div>
+            <div class="animationli"><img src="/logos/javascript.png" alt="JavaScript" class="skillContent"></div>
+            <div class="animationli"><img src="/logos/api.png" alt="api" class="skillContent"></div>
+            <div class="animationli"><img src="logos/python.png" alt="Python" class="skillContent"></div>
+            <div class="animationli"><img src="/logos/nodejs.png" alt="nodejs" class="skillContent"></div>
+            <div class="animationli"><img src="logos/reactjs.png" alt="reactjs" class="skillContent"></div>
+            <div class="animationli"><img src="/logos/mongodb.png" alt="MongoDB" class="skillContent"></div>
+            <div class="animationli"><img src="/logos/mysql.png" alt="mysql" class="skillContent"></div>
+            <div class="animationli"><img src="/logos/git.png" alt="git" class="skillContent"></div>
+            <div class="animationli"><img src="/logos/bootstrap.png" alt="bootstrap" class="skillContent"></div>
+            <div class="animationli"><img src="/logos/aws-lambda.png" alt="awslambda" class="skillContent"></div>
+            <div class="animationli"><img src="/logos/html.png" alt="HTML" class="skillContent"></div>
+            <div class="animationli"><img src="/logos/css.png" alt="CSS" class="skillContent"></div>
+            <div class="animationli"><img src="/logos/javascript.png" alt="JavaScript" class="skillContent"></div>
+            <div class="animationli"><img src="/logos/api.png" alt="api" class="skillContent"></div>
+            <div class="animationli"><img src="logos/python.png" alt="Python" class="skillContent"></div>
+            <div class="animationli"><img src="/logos/nodejs.png" alt="nodejs" class="skillContent"></div>
+            <div class="animationli"><img src="logos/reactjs.png" alt="reactjs" class="skillContent"></div>
+            <div class="animationli"><img src="/logos/mongodb.png" alt="MongoDB" class="skillContent"></div>
+            <div class="animationli"><img src="/logos/mysql.png" alt="mysql" class="skillContent"></div>
+            <div class="animationli"><img src="/logos/git.png" alt="git" class="skillContent"></div>
+            <div class="animationli"><img src="/logos/bootstrap.png" alt="bootstrap" class="skillContent"></div>
+            <div class="animationli"><img src="/logos/aws-lambda.png" alt="awslambda" class="skillContent"></div>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -860,7 +845,7 @@
               <div class="row">
                 <div class="form-group col-md-6 my-3">
                   <label for="name"><b>Name</b></label>
-                  <input type="text" name="name" class="form-control" id="name" required>
+                  <input type="text" name="name" class="form-control" id="name" required onchange="onchange()">
                 </div>
                 <div class="form-group col-md-6 my-3">
                   <label for="name"><b>Email</b></label>
@@ -876,16 +861,14 @@
                 <textarea class="form-control" name="message" id="msg" rows="10" required></textarea>
               </div>
               <span class="my-2" id="sendconf"></span>
-              <div class="text-center my-5"><button type="submit" class="btn btn-success">Submit</button></div>
+              <div class="text-center my-5"><button type="submit" class="btn btn-success" id="submitbtn"
+                  data-target="#exampleModal">Submit</button></div>
             </form>
           </div>
-
         </div>
-
       </div>
+
     </section><!-- End Contact Section -->
-
-
   </main>
 
   <!-- End #main -->
@@ -923,8 +906,6 @@
   <script src="assets/js/main.js"></script>
 
   <script src="assets/js/contact.js"></script>
-
-
 
 
   <!-- bootstra js -->
